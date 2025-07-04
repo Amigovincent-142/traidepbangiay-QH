@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Liên hệ / Hỗ trợ</title>
+  <link rel="stylesheet" href="../css/lienhe.css"/>
+</head>
+<body>
+   <header class="header">
+  <div class="main-header">
+    <div class="logo">
+      <a href="../html/index.html"><img src="../img/logo_GV.png" alt="logo"></a>
+    </div>
+    <nav class="navbar">
+      <a href="index.html">Trang chủ</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="gioithieu.html">Về chúng tôi</a>
+      <a href="lienhe.html">Liên hệ</a>
+
+    </nav>
+    <div class="auth-buttons">
+      <a href="../html/login.html"><button>Đăng Nhập</button></a>
+      <a href="../html/signup.html"><button>Đăng Ký</button></a>
+    </div>
+  </div>
+</header>
+
+  <div class="container">
+    <h2>Liên hệ / Hỗ trợ</h2>
+    <div class="info">
+        <p><strong>Email:</strong> support@traidepbangiay.vn</p>
+      <p><strong>Hotline:</strong> 0123 456 789</p>
+      <p><strong>Địa chỉ:</strong> 613 Âu Cơ, Phường Phú Trung, Quận Tân Phú, TPHCM</p>
+    </div>
+
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" placeholder="Họ tên của bạn" required />
+      <input type="email" placeholder="Email của bạn" required />
+      <textarea rows="5" placeholder="Nội dung cần hỗ trợ..." required></textarea>
+      <button type="submit">Gửi yêu cầu</button>
+    </form>
+
+    <div style="margin-top: 30px;">
+      <h3 style="color: #222; text-align: center; margin-bottom: 10px;">Bản đồ cửa hàng</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.0619441734924!2d106.6292305748499!3d10.805887558741957!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752be67ffb4891%3A0xa315ef7607e0e25b!2zNjEzIMSQLiDDgG4gQ8awLCBQaMawxqFuZyBQaMO6IFRydW5nLCBUw6JuIFBow7osIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgSOG7kyBDaMOtIENobw!5e0!3m2!1svi!2s!4v1719300567770!5m2!1svi!2s"
+        width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen=""
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>TRAI ĐẸP BÁN GIÀY</h3>
+      <p>Bước chất từng bước – Cùng trai đẹp dẫn lối</p>
+      <p>&copy; 2025 Trai Đẹp Bán Giày. All rights reserved.</p>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="gioithieu.html">Về chúng tôi</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </div>
+    <div class="footer-contact">
+      <p><strong>Email:</strong> support@traidepbangiay.vn</p>
+      <p><strong>Hotline:</strong> 0123 456 789</p>
+    </div>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

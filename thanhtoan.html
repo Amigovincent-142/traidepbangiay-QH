@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trang Thanh Toán</title>
+  <link rel="stylesheet" href="../css/thanhtoan.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Trang Thanh Toán</h1>
+    
+    <form id="paymentForm">
+      <label for="name">Họ tên:</label>
+      <input type="text" id="name" required placeholder="Nhập họ tên"/>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required placeholder="Nhập email"/>
+
+      <label for="product">Chọn sản phẩm:</label>
+      <select id="product" onchange="updatePrice()">
+        <option value="0">-- Chọn sản phẩm --</option>
+        <option value="500000">Áo thun - 250,000đ</option>
+        <option value="1200000">Giày thể thao - 5,000,000đ</option>
+        <option value="350000">Túi - 500,000đ</option>
+      </select>
+
+      <label for="quantity">Số lượng:</label>
+      <input type="number" id="quantity" value="1" min="1" onchange="updateTotal()"/>
+
+      <p id="priceDisplay">Đơn giá: 0đ</p>
+      <p id="totalDisplay">Tổng cộng: 0đ</p>
+
+      <button type="submit">Thanh toán</button>
+    </form>
+
+    <div id="confirmation" class="hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

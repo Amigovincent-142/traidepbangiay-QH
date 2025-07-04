@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  padding: 12px 0;
+  z-index: 999;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.header.scrolled {
+  background: #222;
+}
+
+.main-header {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+
+.logo img {
+  width: 150px;
+  margin-right: 10px;
+}
+
+.navbar {
+  margin-right: -300px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  font-weight: bold;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffc107;
+}
+
+.navbar a::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.navbar a:hover::after {
+  width: 100%;
+}
+
+.auth-buttons button {
+  background-color: #c59d34;
+  border: none;
+  padding: 8px 16px;
+  margin-left: 10px;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+.auth-buttons button:hover {
+  background-color: #e3b847;
+}
+
+.container {
+  max-width: 1000px;
+  margin-top: 140px;
+  margin-left: 240px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.product {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.product-image img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.product-image img:hover {
+  transform: scale(1.05);
+}
+
+.product-title {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  color: #e53935;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.product-rating {
+  margin-bottom: 20px;
+}
+
+form label {
+  display: block;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+form select {
+  padding: 6px;
+  margin-top: 5px;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  margin-top: 20px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1b5e20;
+}
+
+.success-message {
+  color: #388e3c;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.product-description {
+  margin-top: 30px;
+  line-height: 1.6;
+}

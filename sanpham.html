@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang Sản Phẩm</title>
+<link rel="stylesheet" href="../css/sanpham.css">
+</head>
+<body>
+
+  <header class="header">
+  <div class="main-header">
+    <div class="logo">
+      <a href="../html/index.html"><img src="../img/logo_GV.png" alt="logo"></a>
+    </div>
+    <nav class="navbar">
+      <a href="../html/index.html">Trang chủ</a>
+      <a href="gioithieu.html">Về chúng tôi</a>
+      <a href="../html/sanpham.html">Sản phẩm</a>
+      <a href="../html/lienhe.html">Liên hệ</a>
+
+    </nav>
+    <div class="auth-buttons">
+      <a href="../html/login.html"><button>Đăng Nhập</button></a>
+      <a href="../html/signup.html"><button>Đăng Ký</button></a>
+    </div>
+  </div>
+</header>
+
+  <div class="tieude">
+    <h1>Cửa Hàng Sản Phẩm</h1>
+  </div>
+
+  <div class="container">
+    <aside>
+      <h3>Danh mục</h3>
+      <ul>
+        <li onclick="filterCategory('all')">Tất cả</li>
+        <li onclick="filterCategory('quanao')">Quần áo</li>
+        <li onclick="filterCategory('giaydep')">Giày Thể Thao</li>
+        <li onclick="filterCategory('phukien')">Phụ kiện</li>
+      </ul>
+    </aside>
+
+    <main>
+      <div class="search-filter">
+        <input type="text" id="searchBox" placeholder="Tìm sản phẩm..." onkeyup="searchProducts()" />
+      </div>
+
+		<a href="../html/aothutro.html">
+      <div class="products" id="productList">
+         <div class="product" data-category="quanao">
+		 <img src="../img/aothun.jfif" alt="Áo Thun" />
+          <h3 class="product-name">Áo Thun</h3>
+          <p class="price">450.000đ</p>
+        </div></a>
+      <a href="../html/chitietsanpham.html">
+		<div class="product" data-category="quanao">
+          <img src="../img/nike2.jpg" alt="Áo Thun" />
+          <h3 class="product-name">Áo Thun Unisex Local Brand</h3>
+          <p class="price">250.000đ</p>
+        </div></a>
+         <a href="../html/aokhac.html">
+		<div class="product" data-category="quanao">
+          <img src="../img/aokhoac.jfif" alt="Áo Thun" />
+          <h3 class="product-name">Áo Khoác Nike</h3>
+          <p class="price">1.200.000đ</p>
+        </div></a>
+         <a href="../html/aohoode.html">
+		  <div class="product" data-category="quanao">
+		 <img src="../img/hoodie.jfif" alt="Áo Thun" />
+          <h3 class="product-name">Hoodie Nike</h3>
+          <p class="price">3.000.000đ</p>
+        </div></a>
+        <a href="../html/aothethao.html">
+		<div class="product" data-category="quanao">
+          <img src="../img/brachaybo.jfif" alt="Áo Thun" />
+          <p class="product-name">Áo Thể Thao</p>
+          <p class="price">1.000.000đ</p>
+      
+        </div></a>
+        <a href="../html/aodabanh.html">
+		<div class="product" data-category="quanao">
+          <img src="../img/bongda.jfif" alt="Áo Thun" />
+          <h3 class="product-name">Áo Bóng Đá</h3>
+          <p class="price">1.000.000đ</p>
+           
+        </div></a>
+        <a href="../html/nikeairforce1.html">
+        <div class="product" data-category="giaydep">
+          <img src="../img/nike.jpg" alt="Giày Sneaker" />
+          <h3 class="product-name">Nike Air Force 1</h3>
+          <p class="price">1.500.000đ</p>
+        </div></a>
+      <a href="../html/nikedefyallday.html">
+		<div class="product" data-category="giaydep">
+          <img src="../img/nike7.jpg" alt="Giày Sneaker" />
+          <h3 class="product-name">Nike Defy All Day</h3>
+          <p class="price">5.000.000đ</p>
+        </div></a>
+        <a href="../html/giaysneakera.html">
+		  <div class="product" data-category="giaydep">
+          <img src="../../img/nike23.jpg" alt="Giày Sneaker" />
+          <p class="product-name">Air Zoom Structure 23</p>
+          <p class="price">2.200.000đ</p>
+        </div></a>
+        <a href="../html/nikemid byyou.html">
+		  <div class="product" data-category="giaydep">
+          <img src="../img/1nike.jpg" alt="Giày Sneaker" />
+          <h3 class="product-name">Nike Mid By You</h3>
+          <p class="price">5.000.000đ</p>
+        </div></a>
+
+        <a href="../html/giaysneakerb.html">
+		  <div class="product" data-category="giaydep">
+          <img src="../img/AirZoomStructure25.webp" alt="Giày Sneaker" />
+          <h3 class="product-name">Air Zoom Structure 25</h3>
+          <p class="price">2.500.000đ</p>
+        </div></a>
+
+        <a href="../html/nike jordan1midse.html">
+		<div class="product" data-category="giaydep">
+          <img src="../img/Air Jordan 1 Mid SE.jpg" alt="Giày Sneaker" />
+          <h3 class="product-name">Nike Jordan 1 Mid SE</h3>
+          <p class="price">8.500.000đ</p>
+        </div></a>
+        <a href="../html/nikejordanz.html">
+		<div class="product" data-category="giaydep">
+          <img src="../img/Air Jordan 1 Zoom CMFT 2.jpg" alt="Giày Sneaker" />
+          <h3 class="product-name">Nike Jordan 1Z</h3>
+          <p class="price">9.500.000đ</p>
+        </div></a>
+        <a href="../html/giaynike1.html">
+		<div class="product" data-category="giaydep">
+          <img src="../img/Air Jordan XXXVII Low PF.jpg" alt="Giày Sneaker" />
+          <h3 class="product-name">Nike Jordan XXXVII</h3>
+          <p class="price">9.500.000đ</p>
+        </div></a>
+        <a href="../html/giaysneakerd.html">
+		<div class="product" data-category="giaydep">
+         <img src="../img/z6119339752845_7c63d86aa94e28eafdcebc61f204d731-300x300.jpg" alt="Giày Sneaker B">
+       <h3 class="product-name">Air Zoom Structure 25</h3>
+        <p class="price">2.500.000đ</p>
+        </div></a>
+        <a href="../html/tui1.html">
+        <div class="product" data-category="phukien">
+          <img src="../img/tui1.jfif" alt="Túi Đeo Chéo" />
+          <h3 class="product-name">Túi Đeo Chéo Nike</h3>
+          <p class="price">3.500.000đ</p>
+        </div></a>
+        <a href="../html/tui2.html">
+		<div class="product" data-category="phukien">
+          <img src="../img/tui2.jfif" alt="Túi Đeo Chéo" />
+          <h3 class="product-name">Túi Đựng Giày</h3>
+          <p class="price">350.000đ</p>
+        </div></a>
+        <a href="../html/tui4.html">
+		<div class="product" data-category="phukien">
+          <img src="../img/tui3.jfif" alt="Túi Đeo Chéo" />
+          <h3 class="product-name">Túi Thể Thao Nike</h3>
+          <p class="price">5.500.000đ</p>
+        </div></a>
+        <a href="../html/tui3.html">
+		<div class="product" data-category="phukien">
+          <img src="../img/tui4.jfif" alt="Túi Đeo Chéo" />
+          <h3 class="product-name">Túi Du Lịch Nike</h3>
+          <p class="price">6.500.000đ</p>
+        </div></a>
+        <a href="../html/tui6.html">
+		<div class="product" data-category="phukien">
+          <img src="../img/tui5.jfif" alt="Túi Đeo Chéo" />
+          <h3 class="product-name">Túi Đeo Bụng Nike</h3>
+          <p class="price">4.000.000đ</p>
+        </div></a>
+        <a href="../html/tui7.html">
+		<div class="product" data-category="phukien">
+          <img src="../img/tui6.jfif" alt="Túi Đeo Chéo" />
+          <h3 class="product-name">Túi Xách </h3>
+          <p class="price">4.600.000đ</p>
+        </div></a>
+		</div>
+      </div>
+    </main>
+  </div>
+
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-left">
+      <h3>TRAI ĐẸP BÁN GIÀY</h3>
+      <h3>Bước chất từng bước – Cùng trai đẹp dẫn lối</h3>
+      <h3>&copy; 2025 Trai Đẹp Bán Giày. All rights reserved.</h3>
+    </div>
+    <div class="footer-links">
+      <a href="index.html">Trang chủ</a>
+      <a href="sanpham.html">Sản phẩm</a>
+      <a href="gioithieu.html">Về chúng tôi</a>
+      <a href="lienhe.html">Liên hệ</a>
+    </div>
+    <div class="footer-contact">
+      <p><strong>Email:</strong> support@traidepbangiay.vn</p>
+      <p><strong>Hotline:</strong> 0123 456 789</p>
+    </div>
+  </div>
+</footer>
+
+	<script src="../js/sanpham.js"></script>
+<script>
+function filterCategory(category) {
+  const products = document.querySelectorAll('.product');
+  products.forEach(product => {
+    if (category === 'all' || product.getAttribute('data-category') === category) {
+      product.parentElement.style.display = '';
+    } else {
+      product.parentElement.style.display = 'none';
+    }
+  });
+}
+</script>
+</body>
+</html>

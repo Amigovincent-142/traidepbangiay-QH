@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chi Tiết Sản Phẩm - Giày Sneaker B</title>
+  <link rel="stylesheet" href="../css/chitietsanpham.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="main-header">
+      <div class="logo">
+        <a href="../html/index.html"><img src="../img/logo_GV.png" alt="logo"></a>
+      </div>
+      <nav class="navbar">
+        <a href="../html/index.html">Trang chủ</a>
+        <a href="gioithieu.html">Về chúng tôi</a>
+        <a href="../html/sanpham.html">Sản phẩm</a>
+        <a href="../html/lienhe.html">Liên hệ</a>
+      </nav>
+      <div class="auth-buttons">
+        <a href="../html/login.html"><button>Đăng Nhập</button></a>
+        <a href="../html/signup.html"><button>Đăng Ký</button></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="product">
+      <div class="product-image">
+        <img id="mainImage" src="../img/AirZoomStructure25.webp" alt="Giày Sneaker B">
+      </div>
+      <div class="product-info"> 
+        <h1 class="product-title">Air Zoom Structure 25</h1>
+        <p class="product-price" id="price">Giá: 2.500.000 VNĐ</p>
+        <p class="product-rating">Đánh giá: ⭐⭐⭐⭐☆ (1424 đánh giá)</p>
+
+        <form id="productForm">
+          <label for="size">Chọn Size:</label>
+          <select id="size">
+            <option>38</option>
+            <option>39</option>
+            <option>40</option>
+            <option>41</option>
+            <option>42</option>
+            <option>43</option>
+            <option>44</option>
+            <option>45</option>
+            <option>46</option>
+          
+
+          </select>
+
+          <label for="color">Chọn Màu:</label>
+          <select id="color">
+            <option>Trắng</option>
+    
+          </select>
+
+          <button type="button" onclick="addToCart()">
+            <i class="fa-solid fa-cart-shopping" style="margin-right: 5px; margin-left: -5px"></i> Thêm vào giỏ hàng
+          </button>
+        </form>
+
+        <p class="success-message" id="message"></p>
+
+        <div class="product-description">
+          <h2>Mô tả sản phẩm</h2>
+          <p>Giày Air Zoom Structure 25 trẻ trung, năng động, phù hợp cho các hoạt động thể thao và đi chơi.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="aothutro.js"></script>
+</body>
+</html>
